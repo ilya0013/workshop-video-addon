@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes skills@1.7.2 add heygen-com/hyperframes *)",
+      "Bash(npx --yes skills@1.7.2 add emilkowalski/skills *)",
+      "Bash(npx --yes hyperframes@0.8.157 *)",
+      "PowerShell(npx --yes skills@1.7.2 add heygen-com/hyperframes *)",
+      "PowerShell(npx --yes skills@1.7.2 add emilkowalski/skills *)",
+      "PowerShell(npx --yes hyperframes@0.8.157 *)",
+      "Bash(npm run check *)",
+      "Bash(npm run snapshot *)",
+      "Bash(npm run render *)",
+      "Bash(npm run dev *)",
+      "PowerShell(npm run check *)",
+      "PowerShell(npm run snapshot *)",
+      "PowerShell(npm run render *)",
+      "PowerShell(npm run dev *)"
+    ]
+  }
+}

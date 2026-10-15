@@ -1,4 +1,4 @@
-# Видео-дополнение к Workshop Starter v0.1.1
+# Видео-дополнение к Workshop Starter v0.1.2
 
 Дополнение превращает проект на Workshop Starter в мастерскую коротких роликов: агент (Claude Code или Codex) делает вертикальные ролики 10–30 с на HyperFrames — со звуком и без, в вашем стиле — и сам проверяет готовый MP4.
 
@@ -20,7 +20,7 @@
 
 Нужны: проект на Workshop Starter и интернет на время установки. Node.js и FFmpeg агент проверит и поставит сам после вашего «да».
 
-1. Откройте в агенте папку своего проекта на Workshop Starter. Нет проекта — сначала поставьте [Workshop Starter](https://github.com/ilya0013/workshop-starter).
+1. Откройте в агенте папку своего проекта на Workshop Starter и **переключите режим на ручной**: Claude Code — **Manual** (вместо Auto), Codex — **«Запрашивать разрешение»** / Ask for approval (вместо «Подтверждать за меня»). Установка запускает программы из интернета, автоматический режим их блокирует; после установки верните прежний режим. Нет проекта — сначала поставьте [Workshop Starter](https://github.com/ilya0013/workshop-starter).
 2. Отправьте — агент сам скачает дополнение с GitHub и поставит его:
 
 ```text
@@ -44,6 +44,7 @@
 | `package.json` | команды `dev`, `check`, `snapshot`, `render` (HyperFrames 0.8.157) |
 | `MOTION.example.md`, `examples/` | образец паспорта стиля, галерея стилей `gallery.html` и где брать картинки-образцы |
 | `INSTALL-VIDEO.md` | пошаговая установка для агента |
+| `.claude/settings.local.json`, `.codex/rules/video.rules` | узкие разрешения: агент может сам запустить установку скиллов (точная версия и источник), HyperFrames 0.8.157 и команды `npm run check / snapshot / render / dev` — без них режим Auto блокирует скачанные из интернета пакеты |
 
 Скиллы HyperFrames и `apple-design` в архив не входят: агент ставит их в проект командой `npx skills add` без глобальных настроек.
 
