@@ -1,0 +1,11 @@
+{
+  "name": "my-videos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.157 preview",
+    "check": "npx --yes hyperframes@0.8.157 check",
+    "snapshot": "npx --yes hyperframes@0.8.157 snapshot --describe false",
+    "render": "node scripts/render.mjs"
+  }
+}

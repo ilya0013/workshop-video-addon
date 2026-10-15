@@ -1,0 +1,9 @@
+
+# Video: renders, snapshots and HyperFrames artifacts are rebuilt from sources.
+renders/
+snapshots/
+.hyperframes/
+# Third-party references and licensed music stay local.
+examples/*.png
+examples/*.jpg
+videos/*/assets/music/
