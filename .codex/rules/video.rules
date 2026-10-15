@@ -1,0 +1,9 @@
+# Video add-on: the exact install and render commands may run without a prompt.
+# Pinned versions and sources; loaded only in a trusted project, at chat start.
+prefix_rule(pattern=["npx", "--yes", "skills@1.7.2", "add", "heygen-com/hyperframes"], decision="allow")
+prefix_rule(pattern=["npx", "--yes", "skills@1.7.2", "add", "emilkowalski/skills"], decision="allow")
+prefix_rule(pattern=["npx", "--yes", "hyperframes@0.8.157"], decision="allow")
+prefix_rule(pattern=["npm", "run", "check"], decision="allow")
+prefix_rule(pattern=["npm", "run", "snapshot"], decision="allow")
+prefix_rule(pattern=["npm", "run", "render"], decision="allow")
+prefix_rule(pattern=["npm", "run", "dev"], decision="allow")
